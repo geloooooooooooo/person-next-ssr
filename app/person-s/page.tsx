@@ -5,7 +5,7 @@ import { Person } from '../models/person'; // Adjust the import path as necessar
 const PeoplePage = async (context: any) => {
   // Default API URL and bearer token from environment variables
   let apiURL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api/person";
-  const bearerToken = process.env.NEXT_API_BEARER_TOKEN || "dummy";
+  const bearerToken = process.env.NEXT_PUBLIC_API_BEARER_TOKEN || "dummy";
 
   // Check if running in server environment
   if (typeof window === 'undefined' && context.req) {

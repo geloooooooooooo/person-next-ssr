@@ -5,7 +5,7 @@ import { Person } from '../models/person'; // Adjust the import path as necessar
 
 const PeoplePage = () => {
   const [people, setPeople] = useState<Person[]>([]);
-  const bearerToken = process.env.NEXT_API_BEARER_TOKEN || "dummy";
+  const bearerToken = process.env.NEXT_PUBLIC_API_BEARER_TOKEN || "dummy";
 
   useEffect(() => {
     const fetchPeople = async () => {
